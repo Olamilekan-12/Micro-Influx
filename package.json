@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"npx json-server --watch ./src/data/db.json --port 4000\"",
     "start": "concurrently \"vite\" \"npx json-server --watch ./src/data/db.json --port 4000\"",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
