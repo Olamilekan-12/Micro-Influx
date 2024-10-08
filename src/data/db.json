@@ -1,0 +1,92 @@
+{
+  "campaigns": [
+    {
+      "id": 1,
+      "initials": "ES",
+      "campaignTitle": "Epic Social Buzz",
+      "brandName": "Samsung",
+      "campaignCategory": "Product Review",
+      "date": "2 days ago",
+      "campaignDescription": "Aliquam massa donec proin sit duis magna eu maecenas. Ultricies id mattis lobortis proin congue proin elementum. Sed ac porttitor metus ante et suspesstn...",
+      "channels": [
+        "Instagram",
+        "Tiktok",
+        "Youtube",
+        "Twitter",
+        "Facebook"
+      ],
+      "minimumBudget": 2000,
+      "maximumBudget": 4000
+    },
+    {
+      "id": "996d",
+      "campaignTitle": "Bello Olamilekan",
+      "brandName": "Redmi",
+      "campaignCategory": "Product Review",
+      "campaignDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis nisi ligula, ut vulputate sapien mollis ut. Morbi et urna justo. Phasellus vel nibh eleifend, dictum nulla id, posuere ante. Sed pretium rhoncus facilisis. Proin tincidunt risus nec velit varius laoreet. Proin eget porta odio, nec tincidunt sapien. Nulla a augue ut augue malesuada fringilla non et urna. Aliquam malesuada libero quis urna vestibulum, quis molestie tellus accumsan. ",
+      "channels": [
+        "Instagram",
+        "Tiktok",
+        "Youtube",
+        "Twitter",
+        "Facebook"
+      ],
+      "minimumBudget": 5000,
+      "maximumBudget": 7000,
+      "initials": "BO",
+      "date": "a few seconds ago"
+    },
+    {
+      "id": "76d6",
+      "campaignTitle": "Bello Olamilekan",
+      "brandName": "Infinix",
+      "campaignCategory": "Product Analysis",
+      "campaignDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis nisi ligula, ut vulputate sapien mollis ut. Morbi et urna justo. Phasellus vel nibh eleifend, dictum nulla id, posuere ante. Sed pretium rhoncus facilisis. Proin tincidunt risus nec velit varius laoreet. Proin eget porta odio, nec tincidunt sapien. Nulla a augue ut augue malesuada fringilla non et urna. Aliquam malesuada libero quis urna vestibulum, quis molestie tellus accumsan. ",
+      "channels": [
+        "Instagram",
+        "Tiktok",
+        "Youtube"
+      ],
+      "minimumBudget": 2000,
+      "maximumBudget": 4000,
+      "initials": "BO",
+      "date": "a few seconds ago"
+    },
+    {
+      "id": "9df7",
+      "campaignTitle": "Olayinka Musa",
+      "brandName": "Iphone",
+      "campaignCategory": "Product Review",
+      "campaignDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis nisi ligula, ut vulputate sapien mollis ut. Morbi et urna justo. Phasellus vel nibh eleifend, dictum nulla id, posuere ante. Sed pretium rhoncus facilisis. Proin tincidunt risus nec velit varius laoreet. Proin eget porta odio, nec tincidunt sapien. Nulla a augue ut augue malesuada fringilla non et urna. Aliquam malesuada libero quis urna vestibulum, quis molestie tellus accumsan. ",
+      "channels": [
+        "Instagram",
+        "Youtube",
+        "Tiktok",
+        "Twitter",
+        "Facebook"
+      ],
+      "minimumBudget": 12000,
+      "maximumBudget": 15000,
+      "initials": "OM",
+      "date": "a few seconds ago"
+    },
+    {
+      "id": "dc74",
+      "campaignTitle": "Clark Kent",
+      "brandName": "Samsung",
+      "campaignCategory": "Product Analysis",
+      "campaignDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis nisi ligula, ut vulputate sapien mollis ut. Morbi et urna justo. Phasellus vel nibh eleifend, dictum nulla id, posuere ante. Sed pretium rhoncus facilisis. Proin tincidunt risus nec velit varius laoreet. Proin eget porta odio, nec tincidunt sapien. Nulla a augue ut augue malesuada fringilla non et urna. Aliquam malesuada libero quis urna vestibulum, quis molestie tellus accumsan. ",
+      "channels": [
+        "Instagram",
+        "Tiktok",
+        "Youtube",
+        "Facebook",
+        "Twitter"
+      ],
+      "minimumBudget": 3000,
+      "maximumBudget": 3500,
+      "initials": "CK",
+      "date": "a few seconds ago"
+    }
+  ]
+}
