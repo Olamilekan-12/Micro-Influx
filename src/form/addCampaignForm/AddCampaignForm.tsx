@@ -23,7 +23,6 @@ import { Textarea } from "@/components/ui/textarea";
 import ChannelSection from "./channelsField/ChannelSection";
 import { Button } from "@/components/ui/button";
 import { useAddCampaign } from "@/api/campaignApi";
-import { useEffect, useState } from "react";
 
 const formSchema = z.object({
   campaignTitle: z.string({
@@ -55,15 +54,7 @@ export type CampaignFormData = z.infer<typeof formSchema>;
 
 const AddCampaignForm = () => {
   const { addCampaign, isLoading } = useAddCampaign();
-  const [timeAgo, setTimeAgo] = useState(moment().fromNow());
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeAgo(moment().fromNow());
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
   const form = useForm<CampaignFormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
