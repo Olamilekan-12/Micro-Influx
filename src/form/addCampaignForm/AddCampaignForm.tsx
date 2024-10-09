@@ -84,7 +84,7 @@ const AddCampaignForm = () => {
     const formData = {
       ...data,
       initials: getInitials(),
-      date: timeAgo,
+      date: moment().startOf("day").fromNow(),
     };
     await addCampaign(formData);
   };
