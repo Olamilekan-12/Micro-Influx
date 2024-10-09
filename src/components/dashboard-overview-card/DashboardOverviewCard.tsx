@@ -23,16 +23,16 @@ const DashboardOverviewCard = () => {
           <DashboardExpensesInfo amount={62231} title="Funds In Escrow" />
           <DashboardExpensesInfo amount={3542} title="Ave. Income Monthly" />
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 text-sm">
           <p>January Summary: </p>
-          <p className="flex items-center gap-1">
+          <p className="flex items-center gap-1 text-sm">
             <span className=" opacity-70">Total Fund in Escrow</span>
             <span>
               <Dot />
             </span>
             <span>{formatCurrency(350)}</span>
           </p>
-          <p className="flex items-center gap-1">
+          <p className="flex items-center gap-1 text-sm">
             <span className=" opacity-70">Total Income</span>
             <span>
               <Dot />
