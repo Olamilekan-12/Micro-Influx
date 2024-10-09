@@ -1,11 +1,16 @@
 import { formatCurrency } from "@/lib/utils";
 
-const DashboardExpensesInfo = () => {
+type Props = {
+  title: string;
+  amount: number;
+};
+
+const DashboardExpensesInfo = ({ title, amount }: Props) => {
   return (
     <div className="w-auto h-[55px] flex flex-col gap-1">
-      <span className="text-xs opacity-75 cursor-pointer">Total Income</span>
+      <span className="text-xs opacity-75 cursor-pointer">{title}</span>
       <span className="font-bold text-2xl cursor-pointer">
-        {formatCurrency(62932)}
+        {formatCurrency(amount)}
       </span>
     </div>
   );

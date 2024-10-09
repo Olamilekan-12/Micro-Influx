@@ -5,13 +5,21 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { campaignType } from "@/page/Dashboard";
 import { ChevronDown } from "lucide-react";
-const CampaignFilter = () => {
+const CampaignFilter = ({
+  campaignItems,
+}: {
+  campaignItems: campaignType[];
+}) => {
   return (
     <div className="hidden w-full h-[50px] md:flex items-center justify-between">
       <p className="hidden md:flex  font-medium gap-4 text-base">
         <span>Search results: </span>
-        <span>{458} Blog Post Campaigns</span>
+        <span>
+          {campaignItems?.length} Blog Post{" "}
+          {campaignItems?.length > 1 ? "Campaigns" : "Campaign"}
+        </span>
       </p>
       <div className="hidden md:flex items-center gap-4">
         <span>Sort by: </span>

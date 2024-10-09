@@ -1,7 +1,7 @@
 import { Bookmark, Dot } from "lucide-react";
 import { Button } from "../ui/button";
 import { formatCurrency, generateHexColor, truncateText } from "@/lib/utils";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { CHANNEL_DATA } from "@/form/addCampaignForm/channelsField/channelData";
 
 type Props = {
@@ -17,6 +17,7 @@ type Props = {
 };
 const CampaignCard = (items: Props) => {
   const [bookMarked, setBookmarked] = useState<boolean>(false);
+  const randomColor = useMemo(() => generateHexColor(), []);
   return (
     <div className="w-full md:w-[45%] xl:w-[30%] h-[300px] bg-white md:rounded-md md:shadow-md p-4 flex-grow cursor-pointer">
       <div className="w-full h-full flex flex-col justify-between">
@@ -25,7 +26,7 @@ const CampaignCard = (items: Props) => {
             <p
               className={`w-[50px] h-[50px]  text-white font-bold flex items-center justify-center rounded-md cursor-pointer`}
               style={{
-                backgroundColor: generateHexColor(),
+                backgroundColor: randomColor,
               }}
             >
               {items.initials}
@@ -86,7 +87,7 @@ const CampaignCard = (items: Props) => {
         <div className="flex items-center justify-between">
           <p className="font-bold flex flex-col gap-2">
             <span className="font-medium text-sm">Budget</span>
-            <span className="flex items-center gap-1 text-sm">
+            <span className="flex items-center gap-1 text-sm text-[#053559] font-bold">
               <span>{formatCurrency(items.budgetOne)}</span>
               <span>-</span>
               <span>{formatCurrency(items.budgetTwo)}</span>

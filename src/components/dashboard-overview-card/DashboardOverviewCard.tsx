@@ -19,9 +19,9 @@ const DashboardOverviewCard = () => {
           <p className="w-full h-[1px] bg-white rounded-md"></p>
         </div>
         <div className="flex items-center gap-[60px]">
-          <DashboardExpensesInfo />
-          <DashboardExpensesInfo />
-          <DashboardExpensesInfo />
+          <DashboardExpensesInfo amount={62932} title="Total Income" />
+          <DashboardExpensesInfo amount={62231} title="Funds In Escrow" />
+          <DashboardExpensesInfo amount={3542} title="Ave. Income Monthly" />
         </div>
         <div className="flex items-center gap-4">
           <p>January Summary: </p>
