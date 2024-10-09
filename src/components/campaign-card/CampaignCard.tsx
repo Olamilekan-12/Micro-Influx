@@ -61,7 +61,9 @@ const CampaignCard = (items: Props) => {
             </span>
           </p>
         </div>
-        <p className="text-sm">{truncateText(items.text, 153)}</p>
+        <p className="text-sm max-w-full text-wrap overflow-hidden">
+          {truncateText(items.text, 153)}
+        </p>
         <div className="flex flex-col gap-2">
           <p className="font-bold">Channels</p>
           <div className="flex items-center gap-2">

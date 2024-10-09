@@ -25,14 +25,11 @@ const Dashboard = () => {
   const [campaignItems, setCampaignItems] = useState<campaignType[]>([]);
   const [searchText, setSearchText] = useState<string>("");
 
-  // Update campaignItems when campaigns data is loaded
   useEffect(() => {
     if (campaigns) {
       setCampaignItems(campaigns);
     }
   }, [campaigns]);
-
-  console.log(campaignItems);
 
   const handleSearch = () => {
     const filteredCampaign = campaignItems?.filter((item: campaignType) =>

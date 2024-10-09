@@ -12,7 +12,7 @@ const MobileSearchBar = ({
   handleReset: () => void;
 }) => {
   return (
-    <div className="flex lg:hidden w-full min-w-[350px] h-full  items-center justify-between overflow-hidden rounded-md">
+    <div className="flex lg:hidden w-full min-w-[250px] h-full  items-center justify-between overflow-hidden rounded-md">
       <input
         className="bg-[#E7F5FF] h-full w-[calc(100%-50px)] px-2 border-none outline-none"
         placeholder="Search Campaigns"
