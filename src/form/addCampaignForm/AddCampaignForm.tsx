@@ -24,31 +24,36 @@ import ChannelSection from "./channelsField/ChannelSection";
 import { Button } from "@/components/ui/button";
 import { useAddCampaign } from "@/api/campaignApi";
 
-const formSchema = z.object({
-  campaignTitle: z.string({
-    required_error: "Campaign title is required",
-  }),
-  brandName: z.string({
-    required_error: "Brand name is required",
-  }),
-  campaignCategory: z.string({
-    required_error: "Campaign category is required",
-  }),
-  campaignDescription: z.string({
-    required_error: "Campaign description is required",
-  }),
-  channels: z.array(z.string()).nonempty({
-    message: "please select at least one item",
-  }),
-  minimumBudget: z.coerce.number({
-    required_error: "Minimum budget is required",
-    invalid_type_error: "must be a valid number",
-  }),
-  maximumBudget: z.coerce.number({
-    required_error: "Minimum budget is required",
-    invalid_type_error: "must be a valid number",
-  }),
-});
+const formSchema = z
+  .object({
+    campaignTitle: z.string({
+      required_error: "Campaign title is required",
+    }),
+    brandName: z.string({
+      required_error: "Brand name is required",
+    }),
+    campaignCategory: z.string({
+      required_error: "Campaign category is required",
+    }),
+    campaignDescription: z.string({
+      required_error: "Campaign description is required",
+    }),
+    channels: z.array(z.string()).nonempty({
+      message: "please select at least one item",
+    }),
+    minimumBudget: z.coerce.number({
+      required_error: "Minimum budget is required",
+      invalid_type_error: "must be a valid number",
+    }),
+    maximumBudget: z.coerce.number({
+      required_error: "Minimum budget is required",
+      invalid_type_error: "must be a valid number",
+    }),
+  })
+  .refine((data) => data.minimumBudget <= data.maximumBudget, {
+    message: "Minimum budget must not be more than maximum budget",
+    path: ["minimumBudget"],
+  });
 
 export type CampaignFormData = z.infer<typeof formSchema>;
 
