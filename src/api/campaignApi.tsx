@@ -2,7 +2,7 @@ import { campaignType } from "@/page/Dashboard";
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import { toast } from "sonner";
 
-const API_BASE_URL = "http://localhost:4000";
+const API_BASE_URL = "http://localhost:7000/api/";
 export const useGetCampaign = () => {
   const getCampaignRequest = async () => {
     const response = await fetch(`${API_BASE_URL}/campaigns`, {

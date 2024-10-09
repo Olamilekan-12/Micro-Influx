@@ -35,7 +35,14 @@ const Dashboard = () => {
           <CampaignSearch />
           <CampaignFilter />
           <div className="w-full h-auto flex flex-wrap gap-y-[20px] gap-x-[20px]">
-            {isLoading && <CampaignCardSkeleton />}
+            {isLoading && (
+              <>
+                <CampaignCardSkeleton />
+                <CampaignCardSkeleton />
+                <CampaignCardSkeleton />
+                <CampaignCardSkeleton />
+              </>
+            )}
             {campaigns?.map((item: campaignType) => (
               <>
                 <CampaignCard
