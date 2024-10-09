@@ -8,6 +8,14 @@ body {
   font-style: normal;
 }
 
+#overlay-background {
+  background-image: url("assets/bg.png");
+  background-color: rgb(13, 80, 131); /* Red color with 50% opacity */
+  background-blend-mode: overlay; /* Blend the color with the image */
+  background-size: cover; /* Make sure the image covers the entire element */
+  background-position: center; /* Center the image */
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

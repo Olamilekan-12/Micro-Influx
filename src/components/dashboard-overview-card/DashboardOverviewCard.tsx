@@ -4,7 +4,10 @@ import { Dot } from "lucide-react";
 
 const DashboardOverviewCard = () => {
   return (
-    <div className="w-[100%] xl:w-[66%] h-full bg-[#053559] px-[24px] py-[16px] text-white rounded-lg">
+    <div
+      className="w-[100%] xl:w-[66%] h-full  px-[24px] py-[16px] text-white rounded-lg"
+      id="overlay-background"
+    >
       <div className="w-full h-full flex flex-col justify-between">
         <div className="flex flex-col gap-2">
           <p className="flex items-center justify-between">
